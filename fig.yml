@@ -1,0 +1,12 @@
+web:
+  build: .
+  command: python server.py
+  environment:
+    HOST: 0.0.0.0
+    PORT: 3000
+    ACCESS_TOKEN: psfxPYF-8yPFy0tgauj0eN1KATWawjHwSFUp_TspreI
+    SUBSCRIBER_NUMBER: 9175595283
+  volumes:
+    - .:/opt/app
+  ports:
+    - 3000:3000
